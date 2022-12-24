@@ -1,30 +1,9 @@
-@media  screen and (max-width:992px) {
-    .my-services{
-        margin-inline: 90px;
+@media screen and (max-width:992px){
+    .my-photo img{
+        max-width: 43vh;
     }
-    .service-box{
-        max-width: 50vh;
-    }
-    .info-list{
-        font-size: 1.2rem;
-    }
-    .introduce{
-        margin-top: -40px;
-        /* font-size: 1.5rem; */
-    }
-    .About-Me{
-        margin-top: -20px;
-    }
-    .right-part-introduce{
-        margin-top: -10px;
-        /* font-size: 1.5rem; */
-        margin-bottom: 20px;
-    }
-}
-@media screen and (max-width:854px){
     .nav-toggle{
         display: block;
-        margin-right: 20px;
     }
     .menu{
         position:relative;
@@ -39,7 +18,7 @@
         right: 0;
         width: 100%;
         padding-block: 20px;
-        transition: o.2s ease-in-out;
+        transition: .5s ease-in-out;
     }
     .nav-bar.active{
         left: 0;
@@ -52,6 +31,7 @@
         flex-direction: column-reverse;
         text-align: center;
         align-items: center;
+        gap: 5px;
     }
     .header img{
         margin-bottom: 40px;
@@ -63,6 +43,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
+        gap: 5px;
         
     }
     .right-part-introduce{
@@ -72,28 +54,19 @@
     .About-Me img{
         margin-bottom: 40px;
     }
-    /* .navigation{
-        display: none;
-    } */
-    .work-heading{
-        /* margin-top: -40px; */
-    }
     .my-gallrey{
         margin-inline: 15px;
         margin-top: -30px;
     }
     .at{
         display: flex;
-        /* justify-content: end; */
-        /* margin-inline:50px ; */
-        /* margin-top: 40px; */
-        justify-content: space-around;
-        /* gap: 120px; */
+        justify-content: space-between;
     }
     .nav-toggle{
        display: flex;
        /* align-content: flex-end; */
        align-items: center;
+       margin-right: 30px;
     }
     .portfolio-logo{
         display:flex;
@@ -102,6 +75,7 @@
         /* align-content: flex-start; */
         align-self:flex-start ;
         gap: 10px;
+        /* margin-left: 10px; */
     }
     .portfolio-logo img{
         height: 60px;
@@ -118,11 +92,14 @@
     
 }
 @media screen and (max-width:798px) {
+    .contact-right-part{
+        /* max-width: auto; */
+    }
     .box{
         grid-row: span 2;
         grid-column: span 3;
         grid-auto-rows: 120px;
-        margin-inline: 50px;
+        /* margin-inline: 50px; */
     }
     .box-1{
         background-position: right;
@@ -132,22 +109,14 @@
     }
     .contact{
         flex-direction: column-reverse;
-        align-items: center;
+        /* align-items: center; */
+
         gap: 20px;
     }
     .contact-left-part{
-        /* max-width: 50vh; */
-        max-width: 60vh;
-        display: flex;
-        justify-content: center;
-        align-content: center;
         font-size: 2rem;
-        /* text-align: center; */
-        /* margin-inline: 80px; */
     }
     .contact-right-part{
-        display: flex;
-        max-width: 40vh;
         text-align: center;
     }
 }
@@ -161,23 +130,43 @@
         font-size: 1.5rem;
     }
     .my-skills{
-        flex-direction: column;
-        /* max-width: 100vh; */
-        /* justify-content: center; */
+        flex-direction: column;   
         align-items: center;
-        flex-basis: 100%;
-        /* margin-inline: -50px; */
-        
+        flex-basis: 100%;    
     }
     .skill{
-        /* gap: -100px; */
         max-width:100%;
-        
     }
     .box{
         background-position: top;
+        max-width: 100%;
+    }
+    .box .btn{
+        width: 90%;
     }
     .box:hover{
         background-position: left;
+    }
+    .primary-button{
+        width: 100%;
+        font-size: 1.3rem;
+    }
+    .nav-toggle{
+        margin-right: -15px;
+    }
+    .portfolio-logo{
+        margin-left: -10px;
+    }
+    .service-box{
+        width: 100%;
+    }
+    .service-box img{
+        max-width: 100%;
+    }
+
+}
+@media screen and (max-width:420px){
+    .contact-left-part{
+        /* width: 35vh; */
     }
 }
