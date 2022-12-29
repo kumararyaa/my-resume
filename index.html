@@ -20,17 +20,25 @@
 
 <body">
     <!-- header -->
-    <div class="container">
+    <div class="container" style="box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);">
         <div class="menu">
 
             <div class="nav-bar" id="nav-bar">
                 <nav class="navigation" id="navigation">
                     <ul class="menu-bar">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#work-section">My-work</a></li>
-                        <li><a href="#service">Services</a></li>
-                        <li><a href="#">CV</a></li>
-                        <li><a href="#blog">Blog</a></li>
+                        <img id="menu-logo" src="https://cdn-icons-png.flaticon.com/512/726/726005.png" alt="">
+                        <div class="cancel-img" id="cancel-img">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                        <div class="list">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#work-section">My-work</a></li>
+                            <li><a href="#service">Services</a></li>
+                            <li><a
+                                    href="https://drive.google.com/file/d/1yhF8diDia0MBPgEU07VqUXItpJbPaLuX/view?usp=share_link">CV</a>
+                            </li>
+                            <li><a href="#blog">Blog</a></li>
+                        </div>
                     </ul>
 
                 </nav>
@@ -56,9 +64,11 @@
                 <h1 style="color: burlywood;">Hello</h1>
                 <h1 style="color: white;">I'm Manish Kumar</h1>
                 <p style="color: rgb(216, 209, 209);">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga commodi atque corrupti est, corporis dolor omnis nobis vitae quae officiis tempore, sequi aperiam adipisci amet, expedita culpa distinctio dolores ratione.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga commodi atque corrupti est, corporis
+                    dolor omnis nobis vitae quae officiis tempore, sequi aperiam adipisci amet, expedita culpa
+                    distinctio dolores ratione.
                 </p>
-                <button class="primary-button">Hire Me</button>
+                <a href="#contact"><button class="primary-button">Hire Me</button></a>
                 <div class="social-logo">
                     <a href="https://www.facebook.com/profile.php?id=100047463230123&mibextid=ZbWKwL"><i
                             class="fa-brands fa-facebook"></i></a>
@@ -69,12 +79,12 @@
                     <a href=""><i class="fa-brands fa-twitter"></i></a>
 
                 </div>
-              
+
             </div>
             <div class="my-photo">
                 <img src="photo.png" alt="">
-        </div>
-            
+            </div>
+
         </div>
         <!-- </div> -->
     </div>
@@ -91,12 +101,13 @@
                     Asperiores obcaecati quisquam quam distinctio, dicta perspiciatis corrupti. Recusandae,
                     similique veritatis tempora voluptate, culpa odio eligendi eaque obcaecati alias sint libero
                     amet!</p>
-                <button class="primary-button">Download CV</button>
+                <a href="https://drive.google.com/file/d/1yhF8diDia0MBPgEU07VqUXItpJbPaLuX/view?usp=share_link"><button
+                        class="primary-button">Download CV</button></a>
             </div>
 
         </div>
     </div>
-    <div class="container">
+    <div class="container" style="box-shadow: 105px 5px 5px rgba(3, 3, 3, 0.5);">
         <div class="row" style="background-color: rgb(10, 3, 3);">
             <div class="skill-heading" style="color: rgb(233, 233, 177);">
                 <h1>My Skills</h1>
@@ -127,49 +138,74 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="work-section" id="work-section">
+    <div class="container" id="work-container" style="box-shadow: 105px 5px 5px rgba(3, 3, 3, 0.5);">
+        <div id="work-section" class="work-section">
             <div class="work-heading" style="color: rgb(240, 240, 147);">
                 <h1>Work</h1>
             </div>
-            <div class="my-gallrey">
-                <div class="box-1 box">
-                    <h3>Calculator</h3>
-                    <p>this is my third project to go through with html,css,javascript</p>
-                    <a href="https://kumararyaa.github.io/calculator/"><button
-                            class="btn primary-button">Preview</button></a>
+            <!-- ********************* -->
+            <div class="slider hidden" id="slider">
+                <div class="downer">
+
+                    <div class="content content-left" id="content-left"><img
+                            src="https://cdn.ttgtmedia.com/rms/onlineimages/Math_programming_calc_figure_2_half_column_mobile.jpg"
+                            alt=""> </div>
+                    <div class="content content-right" id="content-right"><img
+                            src="https://www.mgtechnologies.co.in/data/products/images/4fa2f4b19eef1b745cf2158f4.jpg"
+                            alt=""></div>
+                    <div class="upper">
+                        <div class=" content content-selected" id="content-selected">
+                            <img id="content-selected-img" src="./responsivePage.jpeg" alt="">
+                        </div>
+                    </div>
                 </div>
-                <div class="box-2 box col-span row-span">
-                    <h3>Zomato Page</h3>
-                    <p>this is my second project</p>
-                    <a href="https://kumararyaa.github.io/zomatoPage/"><button
-                            class="btn primary-button">Preview</button></a>
+
+                <div class="button__">
+                    <!-- <i class="fa-solid fa-chevron-left" id="left-arrow"></i> -->
+                    <a href="https://kumararyaa.github.io/usabilityPage/">
+                        <button class="btn primary-button" id="preview__button">Preview <i
+                                class="fa-solid fa-eye"></i></button></a>
+                    <i class="fa-solid fa-chevron-right" id="right-arrow"></i>
                 </div>
-                <div class="box-3 box col-span">
-                    <h3>grid-gallery</h3>
-                    <p>photo gallrey using grid property </p>
-                    <a href="https://kumararyaa.github.io/templatee/"><button
-                            class="btn primary-button">Preview</button></a>
-                </div>
-                <div class="box-4 box">
-                    <h3>Landing page</h3>
-                    <p>responsive page using html,css</p>
-                    <a href="https://kumararyaa.github.io/usabilityPage/"><button
-                            class="btn primary-button">Preview</button></a>
-                </div>
-                <div class="box-5 box">
-                    <h3>Template</h3>
-                    <p>This is my first project to go through with html ,CSS and Bootstrap</p>
-                    <a href="https://kumararyaa.github.io/gallery/"><button
-                            class="btn primary-button">Preview</button></a>
-                </div>
-                <!-- <div class="box-4 box">
+            </div>
+
+            <!-- <div class="content content-right" id="content-right"><img src="https://www.mgtechnologies.co.in/data/products/images/4fa2f4b19eef1b745cf2158f4.jpg" alt=""></div> -->
+        </div>
+        <!-- ************************************* -->
+        <div class="my-gallrey" id="my-gallrey">
+
+            <div class="box-1 box">
                 <h3>Calculator</h3>
                 <p>this is my third project to go through with html,css,javascript</p>
-                <button class="btn">Preview</button>
-            </div>  -->
+                <a href="https://kumararyaa.github.io/calculator/"><button class="btn primary-button">Preview <i
+                            class="fa-solid fa-eye"></i></button></a>
+            </div>
+            <div class="box-2 box col-span row-span">
+                <h3>Zomato Page</h3>
+                <p>this is my second project</p>
+                <a href="https://kumararyaa.github.io/zomatoPage/"><button class="btn primary-button">Preview <i
+                            class="fa-solid fa-eye"></i></button></a>
+            </div>
+            <div class="box-3 box col-span">
+                <h3>grid-gallery</h3>
+                <p>photo gallrey using grid property </p>
+                <a href="https://kumararyaa.github.io/templatee/"><button class="btn primary-button">Preview <i
+                            class="fa-solid fa-eye"></i></button></a>
+            </div>
+            <div class="box-4 box">
+                <h3>Landing page</h3>
+                <p>responsive page using html,css</p>
+                <a href="https://kumararyaa.github.io/usabilityPage/"><button class="btn primary-button">Preview <i
+                            class="fa-solid fa-eye"></i></button></i></a>
+            </div>
+            <div class="box-5 box">
+                <h3>Template</h3>
+                <p>This is my first project to go through with html ,CSS and Bootstrap</p>
+                <a href="https://kumararyaa.github.io/gallery/"><button class="btn primary-button">Preview <i
+                            class="fa-solid fa-eye"></i></button></a>
             </div>
         </div>
+    </div>
     </div>
     <div class="container">
         <div class="blog" id="blog">
@@ -184,102 +220,128 @@
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias minima, ab ut
                 necessitatibus, dolores autem laudantium, incidunt iusto error et debitis cum iure expedita
                 vitae ipsam? Quidem eveniet reiciendis illum!
-                
-                laudantium tenetur architecto sapiente sunt quis soluta maxime repudiandae, saepe placeat optio
-                impedit, ipsum debitis veritatis ullam! Explicabo, maxime?
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="service" id="service">
-            <div class="services-heading">
-                <h1>Services</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, suscipit totam. Nam eum
-                    numquam eius ea pariatur incidunt reiciendis ut tenetur adipisci impedit minima eveniet et
-                    consectetur, modi minus. Ullam!</p>
-            </div>
-            <div class="my-services">
-                <div class="web-development service-box">
-                    <img src="https://miro.medium.com/max/1200/1*pE2fOVDikEUwiQJlh4ggzg.jpeg" alt="">
-                    <h2>web-development</h2>
+    <div class="service">
+        <div class="container">
+            <div id="service">
+                <div class="services-heading">
+                    <h1>Services</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, suscipit totam. Nam eum
+                        numquam eius ea pariatur incidunt reiciendis ut tenetur adipisci impedit minima eveniet et
+                        consectetur, modi minus. Ullam!</p>
                 </div>
-                <div class="managing-skill service-box">
-                    <img src="https://aliabdaal.com/content/images/2021/03/7-Essential-Self-Management-Skills-Definition-Examples-and-Tips.svg"
-                        alt="">
-                    <h2>managing-skills</h2>
-                </div>
-                <div class="data-structure service-box">
-                    <img src="https://www.skillrary.com/uploads/updatedimages/883_small.png" alt="">
-                    <h2>data-strucutres</h2>
-                </div>
-                <div class="bootstrap-skill service-box">
-                    <img src="https://getbootstrap.com/docs/5.2/assets/brand/bootstrap-social.png" alt="">
-                    <h2>bootstrap-skill</h2>
-                </div>
-            </div>
+                <div class="my-services">
+                    <div class="web-development service-box">
+                        <div class="imagebox">
+                            <img src="https://www.softsynthsoftware.com/assets/images/webdevelopment.png" alt="">
+                        </div>
+                        <div class="service-content">
+                            <h2 style="color: black;">web-development</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta deserunt amet, ipsum
+                                nesciunt voluptas excepturi quam ullam.</p>
+                        </div>
+                    </div>
+                    <div class="managing-skill service-box">
+                        <div class="imagebox managingImagebox">
+                            <img src="https://aliabdaal.com/content/images/2021/03/7-Essential-Self-Management-Skills-Definition-Examples-and-Tips.svg"
+                                alt="">
+                        </div>
+                        <div class="service-content">
+                            <h2 style="color: black;">managing-skills</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta deserunt amet, ipsum
+                                nesciunt voluptas excepturi quam ullam.</p>
+                        </div>
+                    </div>
+                    <div class="data-structure service-box">
+                        <div class="imagebox dsImagebox">
+                            <img src="https://assets.leetcode.com/static_assets/others/DS_II.png" alt="">
 
+                        </div>
+                        <div class="service-content">
+                            <h2 style="color: black;">Data Structure</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta deserunt amet, ipsum
+                                nesciunt voluptas excepturi quam ullam.</p>
+                        </div>
+                    </div>
+                    <div class="bootstrap-skill service-box">
+                        <div class="imagebox">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUdylODRwIQQjS7WKrCXU39C978mVDIni6Bg&usqp=CAU"
+                                alt="">
+
+                        </div>
+                        <div class="service-content">
+                            <h2 style="color: black;">Bootstrap</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta deserunt amet, ipsum
+                                nesciunt voluptas excepturi quam ullam.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
     <div class="container">
         <div class="contact-heading">
             <h1>Contact</h1>
         </div>
-        <div class="contact">
+        <div class="contact" id="contact">
             <div class="contact-left-part">
-                <h3>Send Us Message</h3>
-                <form action="#" class="signup-body">
-                    <p>
-                        <label for="fullname"><h5>Full Name</h5></label>
-                        <input type="text" id="fullname" placeholder="Manish" required>
-                    </p>
-                    <p>
-                        <label for="email"><h5>Your Email</h5></label>
-                        <input type="email" id="email" placeholder="Manish@gmail.com" required>
-                    </p>
-                    <p>
-                        <label for="number"><h5>Your Number</h5></label>
-                        <input type="text" id="number" required>
-                    </p>
-                    <p>
-                        <input type="submit" id="submit" value="send" class="primary-button btn">
-                    </p>
+                <h1>Send us Message</h1>
+                <form action="#" id="form">
+                    <label for="name" id="name">Name*</label>
+                    <input type="text" id="name" placeholder="Manish">
+                    <label for="email" id="email">Email*</label>
+                    <input type="email" id="email" placeholder="rdjmanishoo7@gmail.com">
+                    <label for="companyName" id="companyName">Company Name*</label>
+                    <input type="text" id="companyName" placeholder="Foffer">
+                    <label for="Message" id="Message">Message*</label>
+                    <textarea name="Message" id="Message" cols="23" rows="5"></textarea>
+                    <a href="" class="send primary-button">Send <i class="fa-sharp fa-solid fa-share"></i></a>
+                    <!-- <button
+                        class="btn primary-button">send <i class="fa-duotone fa-arrow-right-to-arc"></i></button> -->
                 </form>
             </div>
-
             <div class="contact-right-part">
-                <div class="contact-right-part-upper-part">
-                    <h3>contact</h3>
-                    <!-- <p id="address-info" style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
-                        quasi iure perspiciatis maxime autem tempore accusantium recusandae velit aperiam
-                        labore.</p> -->
+                <h1>Address</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur repellat fugit, unde laudantium
+                    doloremque minus! Repellat beatae placeat, nisi architecto corporis, et dolore exercitationem
+                    dolorum labore error saepe nesciunt necessitatibus.</p>
+                <div class="home-address">
+                    <i class="fa-solid fa-house-user"></i>
+                    B-135/3 inder Enclave-1 Kirari Suleman Nagar
                 </div>
-                <div class="info">
-                    <ul class="info-list">
-                        <li><i class="fa fa-location-pin contact-details"></i>B-135/3 Inder Enclave Phase-1 Kirari.</li>
-                        <li>
-                            <i class="fa-solid fa-phone "></i>8882850061
-                        </li>
-                        <li><i class="fa-solid fa-envelope "></i>rdjmanishoo7@gmail.com</li>
-                    </ul>
-
-
+                <div class="email-address">
+                    <i class="fa-solid fa-envelope"></i>
+                    rdjmanishoo7@gmail.com
+                </div>
+                <div class="phone-number">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    8882850061
+                </div>
+                <div id="map">
                 </div>
             </div>
         </div>
-        <div class="container">
-
-            <div class="footer">
-                <h3>Copyright @2022 | All rights reserved</h3>
-            </div>
     </div>
-        <script>
-            const toggleButton = document.getElementById('menu-toggle');
-            const navbar = document.getElementById('nav-bar');
-            toggleButton.addEventListener('click', () => {
-                navbar.classList.toggle('active');
-            })
+    <div class="container">
 
-        </script>
-        </body>
+        <div class="footer">
+            <h3>Copyright @2022 | All rights reserved</h3>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script>
+        
+        const toggleButton = document.getElementById('menu-toggle');
+        const navbar = document.getElementById('nav-bar');
+        toggleButton.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        })
+        
+    </script>
+
+    </body>
 
 </html>
