@@ -42,7 +42,7 @@ TransitionEvent
     
     obj.push(obj1);
 }
-// setInterval(changeImage,2000);
+setInterval(changeImage,3000);
 // let arrowLeftElement=document.getElementById('left-arrow');
 // arrowLeftElement.addEventListener('click',()=>{
 // changeImage();
